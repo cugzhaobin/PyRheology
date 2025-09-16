@@ -1,0 +1,664 @@
+import h5py
+
+with h5py.File('rock.h5', 'w') as h5:
+    h5['olivine/density'] = 3320
+    h5['olivine/alpha'] = 2.4e-5
+    h5['olivine/k'] = 3.5
+    
+    h5['olivine/HK03dd/ref'] = 'Hirth and Kohlstedt, 2003, dry olivine, dislocation creep'
+    h5['olivine/HK03dd/n']   = 3.5
+    h5['olivine/HK03dd/Q']   = 530 *1e3
+    h5['olivine/HK03dd/V']   = 18*1e-6
+    h5['olivine/HK03dd/A']   = 1.1e5
+    h5['olivine/HK03dd/m']   = 0.0
+    h5['olivine/HK03dd/rkname'] = 'olivine'
+    h5['olivine/HK03dd/rkdensity'] = 3320.0
+    
+    h5['olivine/HK03dw/name'] = 'HK03dw'
+    h5['olivine/HK03dw/ref'] = 'Hirth and Kohlstedt, 2003, wet olivine, dislocation creep'
+    h5['olivine/HK03dw/n']   = 3.5
+    h5['olivine/HK03dw/p']   = 1.2
+    h5['olivine/HK03dw/Q']   = 520 *1e3
+    h5['olivine/HK03dw/V']   = 22*1e-6
+    h5['olivine/HK03dw/A']   = 1600
+    h5['olivine/HK03dw/rkname'] = 'olivine'
+    h5['olivine/HK03dw/rkdensity'] = 3320.0
+    
+    h5['olivine/HK03gw/name'] = 'HK03gw'
+    h5['olivine/HK03gw/ref'] = 'Hirth and Kohlstedt, 2003, wet olivine, diffusion creep'
+    h5['olivine/HK03gw/n']   = 1
+    h5['olivine/HK03gw/m']   = 3
+    h5['olivine/HK03gw/p']   = 1
+    h5['olivine/HK03gw/Q']   = 375 *1e3
+    h5['olivine/HK03gw/V']   = 20*1e-6
+    h5['olivine/HK03gw/A']   = 10**7.4
+    h5['olivine/HK03gw/rkname'] = 'olivine'
+    h5['olivine/HK03gw/rkdensity'] = 3320.0
+    
+    h5['olivine/HK03disGBS/name'] = 'HK03disGBS'
+    h5['olivine/HK03disGBS/ref'] = 'Hirth and Kohlstedt, 2003, dry olivine, dis-GBS'
+    h5['olivine/HK03disGBS/n']   = 1
+    h5['olivine/HK03disGBS/m']   = 3
+    h5['olivine/HK03disGBS/p']   = 1
+    h5['olivine/HK03disGBS/Q']   = 375 *1e3
+    h5['olivine/HK03disGBS/V']   = 20*1e-6
+    h5['olivine/HK03disGBS/A']   = 10**7.4
+    h5['olivine/HK03disGBS/rkname'] = 'olivine'
+    h5['olivine/HK03disGBS/rkdensity'] = 3320.0
+    
+    
+    h5['olivine/HZK11disGBS/name'] = 'HZK11disGBS'
+    h5['olivine/HZK11disGBS/ref'] = 'Hansem, Zimmerman, and Kohlstedt, 2011, dry olivine, dis-GBS'
+    h5['olivine/HZK11disGBS/n']   = 2.9
+    h5['olivine/HZK11disGBS/m']   = 0.7
+    h5['olivine/HZK11disGBS/p']   = 1
+    h5['olivine/HZK11disGBS/Q']   = 445 *1e3
+    h5['olivine/HZK11disGBS/V']   = 0*1e-6
+    h5['olivine/HZK11disGBS/A']   = 6.31e4*(1e-6)**(2.9+0.7)
+    h5['olivine/HZK11disGBS/rkname'] = 'olivine'
+    h5['olivine/HZK11disGBS/rkdensity'] = 3320.0
+    
+    h5['olivine/MK00dw/name'] = 'MK00dw'
+    h5['olivine/MK00dw/ref'] = 'Mei and Kohlstedt, 2000, wet olivine, dislocaiton creep'
+    h5['olivine/MK00dw/n']   = 3.0
+    h5['olivine/MK00dw/m']   = 0.0
+    h5['olivine/MK00dw/p']   = 0.98
+    h5['olivine/MK00dw/Q']   = 470 *1e3
+    h5['olivine/MK00dw/V']   = 20*1e-6
+    h5['olivine/MK00dw/A']   = (10**3.2)*(1e-6)**(3.0+0.98)
+    h5['olivine/MK00dw/rkname'] = 'olivine'
+    h5['olivine/MK00dw/rkdensity'] = 3320.0
+
+    h5['olivine/MK00gw/name'] = 'MK00gw'
+    h5['olivine/MK00gw/ref'] = 'Mei and Kohlstedt, 2000, wet olivine, diffusion creep'
+    h5['olivine/MK00gw/n']   = 1
+    h5['olivine/MK00gw/m']   = 3
+    h5['olivine/MK00gw/p']   = 1
+    h5['olivine/MK00gw/Q']   = 295 *1e3
+    h5['olivine/MK00gw/V']   = 20*1e-6
+    h5['olivine/MK00gw/A']   = (10**4.7)*(1e-6)**(1+3+1)
+    h5['olivine/MK00gw/rkname'] = 'olivine'
+    h5['olivine/MK00gw/rkdensity'] = 3320.0
+    
+    
+    h5['olivine/FJ06/name'] = 'FJ06'
+    h5['olivine/FJ06/ref'] = 'Faul and Jackson, dry olivine, diffusion creep'
+    h5['olivine/FJ06/n']   = 1.4
+    h5['olivine/FJ06/m']   = 3
+    h5['olivine/FJ06/p']   = 1
+    h5['olivine/FJ06/Q']   = 484 *1e3
+    h5['olivine/FJ06/V']   = 20*1e-6
+    h5['olivine/FJ06/A']   = (10**10.3)*(1e-6)**(1.4+3)
+    h5['olivine/FJ06/rkname'] = 'olivine'
+    h5['olivine/FJ06/rkdensity'] = 3320.0
+
+    h5['olivine/KJ03d/name'] = 'KJ03d'
+    h5['olivine/KJ03d/ref'] = 'Karato and Jung, dry olivine, dislocation creep'
+    h5['olivine/KJ03d/n']   = 3
+    h5['olivine/KJ03d/m']   = 0
+    h5['olivine/KJ03d/p']   = 0
+    h5['olivine/KJ03d/Q']   = 5100 *1e3
+    h5['olivine/KJ03d/V']   = 14*1e-6
+    h5['olivine/KJ03d/A']   = (10**6.1)*(1e-6)**(3)
+    h5['olivine/KJ03d/rkname'] = 'olivine'
+    h5['olivine/KJ03d/rkdensity'] = 3320.0
+
+    h5['olivine/KJ03w/name'] = 'KJ03w'
+    h5['olivine/KJ03w/ref'] = 'Karato and Jung, wet olivine, dislocation creep'
+    h5['olivine/KJ03w/n']   = 3
+    h5['olivine/KJ03w/m']   = 0
+    h5['olivine/KJ03w/p']   = 1.2
+    h5['olivine/KJ03w/Q']   = 470 *1e3
+    h5['olivine/KJ03w/V']   = 24*1e-6
+    h5['olivine/KJ03w/A']   = (10**2.9)*(1e-6)**(3+1.2)
+    h5['olivine/KJ03w/rkname'] = 'olivine'
+    h5['olivine/KJ03w/rkdensity'] = 3320.0
+    
+    h5['olivine/Kd/name'] = 'Kd'
+    h5['olivine/Kd/ref'] = 'Karato et al., 1986, dry olivine, dislocation creep'
+    h5['olivine/Kd/n']   = 3.5
+    h5['olivine/Kd/m']   = 0.0
+    h5['olivine/Kd/p']   = 0.0
+    h5['olivine/Kd/Q']   = 540 *1e3
+    h5['olivine/Kd/V']   = 1.0
+    h5['olivine/Kd/A']   = (240000)*(1e-6)**(3.5)
+    h5['olivine/Kd/rkname'] = 'olivine'
+    h5['olivine/Kd/rkdensity'] = 3320.0
+
+    h5['olivine/CM/name'] = 'CM'
+    h5['olivine/CM/ref'] = 'Chen and Morgan, 1990'
+    h5['olivine/CM/n']   = 3.0
+    h5['olivine/CM/m']   = 0.0
+    h5['olivine/CM/p']   = 0.0
+    h5['olivine/CM/Q']   = 520 *1e3
+    h5['olivine/CM/V']   = 1.0
+    h5['olivine/CM/A']   = (1000)*(1e-6)**(3)
+    h5['olivine/CM/rkname'] = 'olivine'
+    h5['olivine/CM/rkdensity'] = 3320.0
+
+    h5['olivine/Go/name'] = 'Go'
+    h5['olivine/Go/ref'] = 'Goetze (1978) dislocation'
+    h5['olivine/Go/n']   = 3.0
+    h5['olivine/Go/m']   = 0.0
+    h5['olivine/Go/p']   = 0.0
+    h5['olivine/Go/Q']   = 520 *1e3
+    h5['olivine/Go/V']   = 1.0
+    h5['olivine/Go/A']   = (70000)*(1e-6)**(3.0)
+    h5['olivine/Go/rkname'] = 'olivine'
+    h5['olivine/Go/rkdensity'] = 3320.0
+
+    h5['olivine/GoEXP/name'] = 'GoEXP'
+    h5['olivine/GoEXP/ref'] = 'Goetze (1978) dislocation'
+    h5['olivine/GoEXP/n']   = 2.0
+    h5['olivine/GoEXP/m']   = 0.0
+    h5['olivine/GoEXP/p']   = 0.8500e6
+    h5['olivine/GoEXP/Q']   = 535 *1e3
+    h5['olivine/GoEXP/V']   = 1.0
+    h5['olivine/GoEXP/A']   = 5.7e11
+    h5['olivine/GoEXP/rkname'] = 'olivine'
+    h5['olivine/GoEXP/rkdensity'] = 3320.0
+
+    h5['olivine/HK03DG/name'] = 'HK03DG'
+    h5['olivine/HK03DG/ref'] = 'Hirth and Kohlstedt, 2003, olivine dis-GBS'
+    h5['olivine/HK03DG/n']   = 3.5
+    h5['olivine/HK03DG/m']   = 2.0
+    h5['olivine/HK03DG/p']   = 0.8500e6
+    h5['olivine/HK03DG/Q']   = 400 *1e3
+    h5['olivine/HK03DG/V']   = 1.0
+    h5['olivine/HK03DG/A']   = (6.5e3)*(1e-6)**(h5['olivine/HK03DG/n'][()]+h5['olivine/HK03DG/m'][()])
+    h5['olivine/HK03DG/rkname'] = 'olivine'
+    h5['olivine/HK03DG/rkdensity'] = 3320.0
+
+    h5['olivine/HZK11DG/name'] = 'HZK11DG'
+    h5['olivine/HZK11DG/ref'] = 'Hansen et al., 2011, olivine dis-GBS'
+    h5['olivine/HZK11DG/n']   = 2.9
+    h5['olivine/HZK11DG/m']   = 0.7
+    h5['olivine/HZK11DG/p']   = 0.0
+    h5['olivine/HZK11DG/Q']   = 445 *1e3
+    h5['olivine/HZK11DG/V']   = 1.0
+    h5['olivine/HZK11DG/A']   = (6.31e4)*(1e-6)**(h5['olivine/HZK11DG/n'][()]+h5['olivine/HZK11DG/m'][()])
+    h5['olivine/HZK11DG/rkname'] = 'olivine'
+    h5['olivine/HZK11DG/rkdensity'] = 3320.0
+    
+    h5['quartz/HTD01/name'] = 'HTD01'
+    h5['quartz/HTD01/ref'] = 'Hirth, Teyssier and Dunlap, 2001, quartzite'
+    h5['quartz/HTD01/n']   = 4.0
+    h5['quartz/HTD01/m']   = 0.7
+    h5['quartz/HTD01/p']   = 1.0
+    h5['quartz/HTD01/Q']   = 135 *1e3
+    h5['quartz/HTD01/V']   = 0.0
+    h5['quartz/HTD01/A']   = 10**(-11.2)*(1e-6)**(h5['quartz/HTD01/n'][()]+h5['quartz/HTD01/p'][()])
+    h5['quartz/HTD01/rkname'] = 'quartz'
+    h5['quartz/HTD01/rkdensity'] = 2260.0
+    
+    h5['quartz/RB04wd/name'] = 'RB04wd'
+    h5['quartz/RB04wd/ref'] = 'Rutter and Brodie, 2004, wet quartzite, dislocation creep'
+    h5['quartz/RB04wd/n']   = 3.0
+    h5['quartz/RB04wd/m']   = 0.7
+    h5['quartz/RB04wd/p']   = 1.0
+    h5['quartz/RB04wd/Q']   = 242 *1e3
+    h5['quartz/RB04wd/V']   = 0.0
+    h5['quartz/RB04wd/A']   = 10**(-4.9)*(1e-6)**(3.0+1.0)
+    h5['quartz/RB04wd/rkname'] = 'quartz'
+    h5['quartz/RB04wd/rkdensity'] = 2260.0
+
+    h5['quartz/RB04wg/name'] = 'RB04wg'
+    h5['quartz/RB04wg/ref'] = 'Rutter and Brodie, 2004, wet quartzite, diffusion creep'
+    h5['quartz/RB04wg/n']   = 1.0
+    h5['quartz/RB04wg/m']   = 2.0
+    h5['quartz/RB04wg/p']   = 1.0
+    h5['quartz/RB04wg/Q']   = 220 *1e3
+    h5['quartz/RB04wg/V']   = 0.0
+    h5['quartz/RB04wg/A']   = 10**(-0.4)*(1e-6)**(h5['quartz/RB04wg/n'][()]+h5['quartz/RB04wg/m'][()])
+    h5['quartz/RB04wg/rkname'] = 'quartz'
+    h5['quartz/RB04wg/rkdensity'] = 2260.0
+    
+    
+    h5['quartz/PT92/name'] = 'PT92'
+    h5['quartz/PT92/ref'] = 'Paterson and Luan, 1992, quartzite'
+    h5['quartz/PT92/n']   = 3.1
+    h5['quartz/PT92/m']   = 0.0
+    h5['quartz/PT92/p']   = 1.0
+    h5['quartz/PT92/Q']   = 135 *1e3
+    h5['quartz/PT92/V']   = 0.0
+    h5['quartz/PT92/A']   = (6.5e-8)*(1e-6)**(h5['quartz/PT92/n'][()]+h5['quartz/PT92/m'][()])
+    h5['quartz/PT92/rkname'] = 'quartz'
+    h5['quartz/PT92/rkdensity'] = 2260.0
+
+    h5['quartz/WHOST94HP/name'] = 'WHOST94HP'
+    h5['quartz/WHOST94HP/ref'] = 'Wang, Hobbs, Ord Shimamoto and Toriumi, 1994, quartzite in Harper-Dorn creep'
+    h5['quartz/WHOST94HP/n']   = 0.99
+    h5['quartz/WHOST94HP/m']   = 0.0
+    h5['quartz/WHOST94HP/p']   = 1.0
+    h5['quartz/WHOST94HP/Q']   = 131.5 *1e3
+    h5['quartz/WHOST94HP/V']   = 0.0
+    h5['quartz/WHOST94HP/A']   = (1.57e-3)*(1e-6)**0.99
+    h5['quartz/WHOST94HP/rkname'] = 'quartz'
+    h5['quartz/WHOST94HP/rkdensity'] = 2260.0
+
+    h5['quartz/WHOST94DC/name'] = 'WHOST94DC'
+    h5['quartz/WHOST94DC/ref'] = 'Wang, Hobbs, Ord Shimamoto and Toriumi, 1994, quartzite in Harper-Dorn creep'
+    h5['quartz/WHOST94DC/n']   = 2.4
+    h5['quartz/WHOST94DC/m']   = 0.0
+    h5['quartz/WHOST94DC/p']   = 1.0
+    h5['quartz/WHOST94DC/Q']   = 101.3 *1e3
+    h5['quartz/WHOST94DC/V']   = 0.0
+    h5['quartz/WHOST94DC/A']   = (9.14e-8)*(1e-6)**2.4
+    h5['quartz/WHOST94DC/rkname'] = 'quartz'
+    h5['quartz/WHOST94DC/rkdensity'] = 2260.0
+
+    h5['quartz/GT/name'] = 'GT'
+    h5['quartz/GT/ref'] = 'Gleason and Tullis, 1995, quartzite'
+    h5['quartz/GT/n']   = 2.8
+    h5['quartz/GT/m']   = 0.0
+    h5['quartz/GT/p']   = 1.0
+    h5['quartz/GT/Q']   = 223 *1e3
+    h5['quartz/GT/V']   = 0.0
+    h5['quartz/GT/A']   = (1.1e-4)*(1e-6)**(h5['quartz/GT/n'][()])
+    h5['quartz/GT/rkname'] = 'quartz'
+    h5['quartz/GT/rkdensity'] = 2260.0
+
+    h5['quartz/Gm/name'] = 'Gm'
+    h5['quartz/Gm/ref'] = 'Gleason and Tullis, 1995, quartzite'
+    h5['quartz/Gm/n']   = 2.8
+    h5['quartz/Gm/m']   = 0.0
+    h5['quartz/Gm/p']   = 1.0
+    h5['quartz/Gm/Q']   = 137 *1e3
+    h5['quartz/Gm/V']   = 0.0
+    h5['quartz/Gm/A']   = (1.8e-8)*(1e-6)**(h5['quartz/Gm/n'][()])
+    h5['quartz/Gm/rkname'] = 'quartz'
+    h5['quartz/Gm/rkdensity'] = 2260.0
+
+    h5['quartz/Jd/name'] = 'Jd'
+    h5['quartz/Jd/ref'] = 'Jaoul et al., 1984, dry quartzite'
+    h5['quartz/Jd/n']   = 2.8
+    h5['quartz/Jd/m']   = 0.0
+    h5['quartz/Jd/p']   = 1.0
+    h5['quartz/Jd/Q']   = 184 *1e3
+    h5['quartz/Jd/V']   = 0.0
+    h5['quartz/Jd/A']   = (3.85e-6)*(1e-6)**2.8
+    h5['quartz/Jd/rkname'] = 'quartz'
+    h5['quartz/Jd/rkdensity'] = 2260.0
+
+    h5['quartz/Jw/name'] = 'Jw'
+    h5['quartz/Jw/ref'] = 'Jaoul et al., 1984, wet quartzite'
+    h5['quartz/Jw/n']   = 2.8
+    h5['quartz/Jw/m']   = 0.0
+    h5['quartz/Jw/p']   = 1.0
+    h5['quartz/Jw/Q']   = 163 *1e3
+    h5['quartz/Jw/V']   = 0.0
+    h5['quartz/Jw/A']   = (9.0e-6)*(1e-6)**2.8
+    h5['quartz/Jw/rkname'] = 'quartz'
+    h5['quartz/Jw/rkdensity'] = 2260.0
+    
+    h5['feldspar/RD06Dd/name'] = 'RD06Dd'
+    h5['feldspar/RD06Dd/ref'] = 'Rybacki and Dresen 2006, dry An100 in dislocation creep'
+    h5['feldspar/RD06Dd/n']   = 3.0
+    h5['feldspar/RD06Dd/m']   = 0.0
+    h5['feldspar/RD06Dd/p']   = 1.0
+    h5['feldspar/RD06Dd/Q']   = 641 *1e3
+    h5['feldspar/RD06Dd/V']   = 0.0
+    n                         = 3.0
+    h5['feldspar/RD06Dd/A']   = 10**12.7*(1e-6)**n
+    h5['feldspar/RD06Dd/rkname'] = 'feldspar'
+    h5['feldspar/RD06Dd/rkdensity'] = 2750
+
+    h5['feldspar/RD06Wd/name'] = 'RD06Wd'
+    h5['feldspar/RD06Wd/ref'] = 'Rybacki and Dresen 2006, wet An100 in dislocation creep'
+    h5['feldspar/RD06Wd/n']   = 3.0
+    h5['feldspar/RD06Wd/m']   = 0.0
+    h5['feldspar/RD06Wd/p']   = 1.0
+    h5['feldspar/RD06Wd/Q']   = 345 *1e3
+    h5['feldspar/RD06Wd/V']   = 0.0
+    n                         = 3.0
+    h5['feldspar/RD06Wd/A']   = 10**0.2*(1e-6)**n
+    h5['feldspar/RD06Wd/rkname'] = 'feldspar'
+    h5['feldspar/RD06Wd/rkdensity'] = 2750
+    
+    
+    h5['feldspar/RD00Dd/name'] = 'RD00Dd'
+    h5['feldspar/RD00Dd/ref'] = 'Rybacki and Dresen 2000, dry An100 in dislocation creep, 0.004wt%H2O'
+    h5['feldspar/RD00Dd/n']   = 3.0
+    h5['feldspar/RD00Dd/m']   = 0.0
+    h5['feldspar/RD00Dd/p']   = 1.0
+    h5['feldspar/RD00Dd/Q']   = 648 *1e3
+    h5['feldspar/RD00Dd/V']   = 0.0
+    n                = 3.0
+    h5['feldspar/RD00Dd/A']   = 10**12.7*(1e-6)**n
+    h5['feldspar/RD00Dd/rkname'] = 'feldspar'
+    h5['feldspar/RD00Dd/rkdensity'] = 2750
+
+    h5['feldspar/RD00Wd/name'] = 'RD00Wd'
+    h5['feldspar/RD00Wd/ref'] = 'Rybacki and Dresen 2000, dry An100 in dislocation creep, 0.007wt%H2O'
+    h5['feldspar/RD00Wd/n']   = 3.0
+    h5['feldspar/RD00Wd/m']   = 0.0
+    h5['feldspar/RD00Wd/p']   = 1.0
+    h5['feldspar/RD00Wd/Q']   = 356 *1e3
+    h5['feldspar/RD00Wd/V']   = 0.0
+    n                = 3.0
+    h5['feldspar/RD00Wd/A']   = 10**2.6*(1e-6)**n
+    h5['feldspar/RD00Wd/rkname'] = 'feldspar'
+    h5['feldspar/RD00Wd/rkdensity'] = 2750
+
+    h5['feldspar/Off01d/name'] = 'Off01d'
+    h5['feldspar/Off01d/ref'] = 'Offerhaus et al. 2001, Ab100 in dislocation creep, 0.2wt%H20'
+    h5['feldspar/Off01d/n']   = 3.0
+    h5['feldspar/Off01d/m']   = 0.0
+    h5['feldspar/Off01d/p']   = 1.0
+    h5['feldspar/Off01d/Q']   = 332 *1e3
+    h5['feldspar/Off01d/V']   = 0.0
+    n                = 3.0
+    h5['feldspar/Off01d/A']   = 10**3.4*(1e-6)**n
+    h5['feldspar/Off01d/rkname'] = 'feldspar'
+    h5['feldspar/Off01d/rkdensity'] = 2750
+
+    h5['feldspar/RD06Dg/name'] = 'RD06Dg'
+    h5['feldspar/RD06Dg/ref'] = 'Rybacki and Dresen 2006, dry An100 in diffusion creep'
+    h5['feldspar/RD06Dg/n']   = 3.0
+    h5['feldspar/RD06Dg/m']   = 0.0
+    h5['feldspar/RD06Dg/p']   = 1.0
+    h5['feldspar/RD06Dg/Q']   = 460 *1e3
+    h5['feldspar/RD06Dg/V']   = 0.0
+    n                = 3.0
+    m                = 0.0
+    h5['feldspar/RD06Dg/A']   = 10**12.1*(1e-6)**(m+n)
+    h5['feldspar/RD06Dg/rkname'] = 'feldspar'
+    h5['feldspar/RD06Dg/rkdensity'] = 2750
+
+    h5['feldspar/RD06Wg/name'] = 'RD06Wg'
+    h5['feldspar/RD06Wg/ref'] = 'Rybacki and Dresen 2006, wet An100 in diffusion creep'
+    h5['feldspar/RD06Wg/n']   = 1.0
+    h5['feldspar/RD06Wg/m']   = 3.0
+    h5['feldspar/RD06Wg/p']   = 1.0
+    h5['feldspar/RD06Wg/Q']   = 159 *1e3
+    h5['feldspar/RD06Wg/V']   = 38*1e-6
+    n                = 1.0
+    m                = 3.0
+    h5['feldspar/RD06Wg/A']   = 10**-0.7*(1e-6)**(m+n)
+    h5['feldspar/RD06Wg/rkname'] = 'feldspar'
+    h5['feldspar/RD06Wg/rkdensity'] = 2750
+
+    h5['feldspar/RD00Dg/name'] = 'RD00Dg'
+    h5['feldspar/RD00Dg/ref'] = 'Rybacki and Dresen 2000, wet An100 in diffusion creep, 0.004wt%H20'
+    h5['feldspar/RD00Dg/n']   = 1.0
+    h5['feldspar/RD00Dg/m']   = 3.0
+    h5['feldspar/RD00Dg/p']   = 1.0
+    h5['feldspar/RD00Dg/Q']   = 467 *1e3
+    h5['feldspar/RD00Dg/V']   = 0.0
+    n                = 1.0
+    m                = 3.0
+    h5['feldspar/RD00Dg/A']   = 10**12.1*(1e-6)**(m+n)
+    h5['feldspar/RD00Dg/rkname'] = 'feldspar'
+    h5['feldspar/RD00Dg/rkdensity'] = 2750
+
+    h5['feldspar/RD00Wg/name'] = 'RD00Wg'
+    h5['feldspar/RD00Wg/ref'] = 'Rybacki and Dresen 2000, wet An100 in diffusion creep, 0.007wt%H20'
+    h5['feldspar/RD00Wg/n']   = 1.0
+    h5['feldspar/RD00Wg/m']   = 3.0
+    h5['feldspar/RD00Wg/p']   = 1.0
+    h5['feldspar/RD00Wg/Q']   = 170 *1e3
+    h5['feldspar/RD00Wg/V']   = 0.0
+    n                = 1.0
+    m                = 3.0
+    h5['feldspar/RD00Wg/A']   = 10**1.7*(1e-6)**(m+n)
+    h5['feldspar/RD00Wg/rkname'] = 'feldspar'
+    h5['feldspar/RD00Wg/rkdensity'] = 2750
+
+    h5['feldspar/Off01g/name'] = 'Off01g'
+    h5['feldspar/Off01g/ref'] = 'Offerhaus et al. 2001, Ab100 in diffusion creep, 0.2wt%H20'
+    h5['feldspar/Off01g/n']   = 1.0
+    h5['feldspar/Off01g/m']   = 3.0
+    h5['feldspar/Off01g/p']   = 1.0
+    h5['feldspar/Off01g/Q']   = 193 *1e3
+    h5['feldspar/Off01g/V']   = 0.0
+    n                = 1.0
+    m                = 3.0
+    h5['feldspar/Off01g/A']   = 10**1.1*(1e-6)**(m+n)
+    h5['feldspar/Off01g/rkname'] = 'feldspar'
+    h5['feldspar/Off01g/rkdensity'] = 2750
+    
+    
+
+    h5['diabase/Ca/name'] = 'Ca'
+    h5['diabase/Ca/ref'] = 'Caristan, 1982, diabase'
+    h5['diabase/diabase/Ca/n']   = 3.05
+    h5['diabase/Ca/m']   = 0.0
+    h5['diabase/Ca/p']   = 1.0
+    h5['diabase/Ca/Q']   = 276 *1e3
+    h5['diabase/Ca/V']   = 0.0
+    n            = 3.05
+    h5['diabase/Ca/A']   = 6.12e-2*(1e-6)**n
+    h5['diabase/Ca/rkname'] = 'diabase'
+    h5['diabase/Ca/rkdensity'] = 2990
+
+    h5['diabase/Cm/name'] = 'Cm'
+    h5['diabase/Cm/ref'] = 'Caristan, 1982, diabase'
+    h5['diabase/Cm/n']   = 3.0
+    h5['diabase/Cm/m']   = 0.0
+    h5['diabase/Cm/p']   = 1.0
+    h5['diabase/Cm/Q']   = 576 *1e3
+    h5['diabase/Cm/V']   = 0.0
+    n            = 3.0
+    h5['diabase/Cm/A']   = 3.12e-2*(1e-6)**n
+    h5['diabase/Cm/rkname'] = 'diabase'
+    h5['diabase/Cm/rkdensity'] = 2990
+
+    h5['diabase/ST/name'] = 'ST'
+    h5['diabase/ST/ref'] = 'Shelton and Tullis, 1981, diabase'
+    h5['diabase/ST/n']   = 3.4
+    h5['diabase/ST/m']   = 0.0
+    h5['diabase/ST/p']   = 1.0
+    h5['diabase/ST/Q']   = 260 *1e3
+    h5['diabase/ST/V']   = 0.0
+    n            = 3.0
+    h5['diabase/ST/A']   = 100*(1e-6)**n
+    h5['diabase/ST/rkname'] = 'diabase'
+    h5['diabase/ST/rkdensity'] = 2990
+
+    h5['diabase/Md/name'] = 'Md'
+    h5['diabase/Md/ref'] = 'Mackwell et al., 1995, dry Maryland diabase'
+    h5['diabase/Md/n']   = 5.1
+    h5['diabase/Md/m']   = 0.0
+    h5['diabase/Md/p']   = 1.0
+    h5['diabase/Md/Q']   = 505 *1e3
+    h5['diabase/Md/V']   = 0.0
+    n            = 5.1
+    h5['diabase/Md/A']   = 4.2*(1e-6)**n
+    h5['diabase/Md/rkname'] = 'diabase'
+    h5['diabase/Md/rkdensity'] = 2990
+
+    h5['diabase/MN/name'] = 'MN'
+    h5['diabase/MN/ref'] = 'Mackwell et al., diabase, Ni/NiO buffer'
+    h5['diabase/MN/n']   = 4.5
+    h5['diabase/MN/m']   = 0.0
+    h5['diabase/MN/p']   = 1.0
+    h5['diabase/MN/Q']   = 500 *1e3
+    h5['diabase/MN/V']   = 0.0
+    n            = 4.5
+    h5['diabase/MN/A']   = 1900*(1e-6)**n
+    h5['diabase/MN/rkname'] = 'diabase'
+    h5['diabase/MN/rkdensity'] = 2990
+
+    h5['diabase/MF/name'] = 'MF'
+    h5['diabase/MF/ref'] = 'Mackwell et al., diabase, Fe/Feo buffer'
+    h5['diabase/MF/n']   = 4.5
+    h5['diabase/MF/m']   = 0.0
+    h5['diabase/MF/p']   = 1.0
+    h5['diabase/MF/Q']   = 500 *1e3
+    h5['diabase/MF/V']   = 0.0
+    n            = 4.5
+    h5['diabase/MF/A']   = 4900*(1e-6)**n
+    h5['diabase/MF/rkname'] = 'diabase'
+    h5['diabase/MF/rkdensity'] = 2990
+
+    h5['diabase/MC/name'] = 'MC'
+    h5['diabase/MC/ref'] = 'Mackwell et al., 1998, dry Columbia diabase'
+    h5['diabase/MC/n']   = 4.7
+    h5['diabase/MC/m']   = 0.0
+    h5['diabase/MC/p']   = 1.0
+    h5['diabase/MC/Q']   = 485 *1e3
+    h5['diabase/MC/V']   = 0.0
+    n            = 4.7
+    h5['diabase/MC/A']   = 195*(1e-6)**n
+    h5['diabase/MC/rkname'] = 'diabase'
+    h5['diabase/MC/rkdensity'] = 2990
+
+    h5['diabase/MM/name'] = 'MM'
+    h5['diabase/MM/ref'] = 'Mackwell et al., 1998, dry Maryland diabase'
+    h5['diabase/MM/n']   = 4.7
+    h5['diabase/MM/m']   = 0.0
+    h5['diabase/MM/p']   = 1.0
+    h5['diabase/MM/Q']   = 485 *1e3
+    h5['diabase/MM/V']   = 0.0
+    n            = 4.7
+    h5['diabase/MM/A']   = 7.9*(1e-6)**n
+    h5['diabase/MM/rkname'] = 'diabase'
+    h5['diabase/MM/rkdensity'] = 2990
+
+    h5['mica/Kr90/name'] = 'Kr90'
+    h5['mica/Kr90/ref'] = 'Kronenberg et al., 1990, biotite dislocation creep'
+    h5['mica/Kr90/n']   = 18
+    h5['mica/Kr90/m']   = 0.0
+    h5['mica/Kr90/p']   = 1.0
+    h5['mica/Kr90/Q']   = 51 *1e3
+    h5['mica/Kr90/V']   = 0.0
+    n              = 18
+    h5['mica/Kr90/A']   = (1e-30)*(1e-6)**n
+    h5['mica/Kr90/rkname'] = 'mica'
+    h5['mica/Kr90/rkdensity'] = 2900
+
+    h5['pyroxene/DD05Dd/name'] = 'DD05Dd'
+    h5['pyroxene/DD05Dd/ref'] = 'Dimanov and Dresen 2005, dry diopside, dislocation creep'
+    h5['pyroxene/DD05Dd/n']   = 5.5
+    h5['pyroxene/DD05Dd/m']   = 0.0
+    h5['pyroxene/DD05Dd/p']   = 1.0
+    h5['pyroxene/DD05Dd/Q']   = 691 *1e3
+    h5['pyroxene/DD05Dd/V']   = 0.0
+    n                = 5.5
+    h5['pyroxene/DD05Dd/A']   = (10**5.3)*(1e-6)**n
+    h5['pyroxene/DD05Dd/rkname'] = 'pyroxene'
+    h5['pyroxene/DD05Dd/rkdensity'] = 3300
+
+    h5['pyroxene/DD05Wd/name'] = 'DD05Wd'
+    h5['pyroxene/DD05Wd/ref'] = 'Dimanov and Dresen 2005, wet diopside, dislocation creep'
+    h5['pyroxene/DD05Wd/n']   = 5.5
+    h5['pyroxene/DD05Wd/m']   = 0.0
+    h5['pyroxene/DD05Wd/p']   = 1.0
+    h5['pyroxene/DD05Wd/Q']   = 534 *1e3
+    h5['pyroxene/DD05Wd/V']   = 0.0
+    n                = 5.5
+    h5['pyroxene/DD05Wd/A']   = (10**0.8)*(1e-6)**n
+    h5['pyroxene/DD05Wd/rkname'] = 'pyroxene'
+    h5['pyroxene/DD05Wd/rkdensity'] = 3300
+
+    h5['pyroxene/DD05Dg/name'] = 'DD05Dg'
+    h5['pyroxene/DD05Dg/ref'] = 'Dimanov and Dresen 2005, dry diopside, diffusion creep'
+    h5['pyroxene/DD05Dg/n']   = 1.0
+    h5['pyroxene/DD05Dg/m']   = 3.0
+    h5['pyroxene/DD05Dg/p']   = 1.0
+    h5['pyroxene/DD05Dg/Q']   = 528 *1e3
+    h5['pyroxene/DD05Dg/V']   = 0.0
+    n                = 1.0
+    h5['pyroxene/DD05Dg/A']   = (10**14)*(1e-6)**n
+    h5['pyroxene/DD05Dg/rkname'] = 'pyroxene'
+    h5['pyroxene/DD05Dg/rkdensity'] = 3300
+
+    h5['pyroxene/DD05Wg/name'] = 'DD05Wg'
+    h5['pyroxene/DD05Wg/ref'] = 'Dimanov and Dresen 2005, wet diopside, diffusion creep'
+    h5['pyroxene/DD05Wg/n']   = 1.0
+    h5['pyroxene/DD05Wg/m']   = 3.0
+    h5['pyroxene/DD05Wg/p']   = 1.0
+    h5['pyroxene/DD05Wg/Q']   = 337 *1e3
+    h5['pyroxene/DD05Wg/V']   = 0.0
+    n                = 1.0
+    m                = 3.0
+    h5['pyroxene/DD05Wg/A']   = (10**8.1)*(1e-6)**(m+n)
+    h5['pyroxene/DD05Wg/rkname'] = 'pyroxene'
+    h5['pyroxene/DD05Wg/rkdensity'] = 3300
+
+    h5['pyroxene/BW01Dd/name'] = 'BW01Dd'
+    h5['pyroxene/BW01Dd/ref'] = 'Bystricky and Mackwell 2001, dry cpx, dislocation creep'
+    h5['pyroxene/BW01Dd/n']   = 4.7
+    h5['pyroxene/BW01Dd/m']   = 0.0
+    h5['pyroxene/BW01Dd/p']   = 1.0
+    h5['pyroxene/BW01Dd/Q']   = 760 *1e3
+    n                = 4.7
+    h5['pyroxene/BW01Dd/V']   = 0.0
+    h5['pyroxene/BW01Dd/A']   = (10**10.3)*(1e-6)**n
+    h5['pyroxene/BW01Dd/rkname'] = 'pyroxene'
+    h5['pyroxene/BW01Dd/rkdensity'] = 3300
+
+    h5['pyroxene/BW01Dg/name'] = 'BW01Dg'
+    h5['pyroxene/BW01Dg/ref'] = 'Bystricky and Mackwell 2001, dry cpx, diffusion creep'
+    h5['pyroxene/BW01Dg/n']   = 1.0
+    h5['pyroxene/BW01Dg/m']   = 3.0
+    h5['pyroxene/BW01Dg/p']   = 1.0
+    h5['pyroxene/BW01Dg/Q']   = 560 *1e3
+    h5['pyroxene/BW01Dg/V']   = 0.0
+    n                = 1.0
+    h5['pyroxene/BW01Dg/A']   = (10**15.1)*(1e-6)**n
+    h5['pyroxene/BW01Dg/rkname'] = 'pyroxene'
+    h5['pyroxene/BW01Dg/rkdensity'] = 3300
+
+    h5['pyroxene/HMMK05Dg/name'] = 'HMMK05Dg'
+    h5['pyroxene/HMMK05Dg/ref'] = 'Hier-Majumder et al. 2005, dry cpx, diffusion creep'
+    h5['pyroxene/HMMK05Dg/n']   = 1.0
+    h5['pyroxene/HMMK05Dg/m']   = 3.0
+    h5['pyroxene/HMMK05Dg/p']   = 1.0
+    h5['pyroxene/HMMK05Dg/Q']   = 760 *1e3
+    h5['pyroxene/HMMK05Dg/V']   = 0.0
+    n                = 1.0
+    m                = 3.0
+    h5['pyroxene/HMMK05Dg/A']   = (10**23.5)*(1e-6)**(m+n)
+    h5['pyroxene/HMMK05Dg/rkname'] = 'pyroxene'
+    h5['pyroxene/HMMK05Dg/rkdensity'] = 3300
+
+    h5['pyroxene/HMMK05Wg/name'] = 'HMMK05Wg'
+    h5['pyroxene/HMMK05Wg/ref'] = 'Hier-Majumder et al. 2005, set cpx, diffusion creep'
+    h5['pyroxene/HMMK05Wg/n']   = 1.0
+    h5['pyroxene/HMMK05Wg/m']   = 3.0
+    h5['pyroxene/HMMK05Wg/p']   = 1.4
+    h5['pyroxene/HMMK05Wg/Q']   = 340 *1e3
+    h5['pyroxene/HMMK05Wg/V']   = 0.0
+    n                  = 1.0
+    p                  = 1.4
+    h5['pyroxene/HMMK05Wg/A']   = (10**6.1)*(1e-6)**(n+p)
+    h5['pyroxene/HMMK05Wg/rkname'] = 'pyroxene'
+    h5['pyroxene/HMMK05Wg/rkdensity'] = 3300
+
+    h5['pyroxene/CHK06Wd/name'] = 'CHK06Wd'
+    h5['pyroxene/CHK06Wd/ref'] = 'Chen et al. 2006, wet cpx, dislocation creep'
+    h5['pyroxene/CHK06Wd/n']   = 2.7
+    h5['pyroxene/CHK06Wd/m']   = 3.0
+    h5['pyroxene/CHK06Wd/p']   = 1.4
+    h5['pyroxene/CHK06Wd/Q']   = 670 *1e3
+    h5['pyroxene/CHK06Wd/V']   = 0.0
+    n                  = 2.7
+    p                  = 3.0
+    h5['pyroxene/CHK06Wd/A']   = (10**6.7)*(1e-6)**(n+m)
+    h5['pyroxene/CHK06Wd/rkname'] = 'pyroxene'
+    h5['pyroxene/CHK06Wd/rkdensity'] = 3300
+
+    h5['pyroxene/Z06omp/name'] = 'Z06omp'
+    h5['pyroxene/Z06omp/ref'] = 'Zhang et al., 2006, dry omphacite'
+    h5['pyroxene/Z06omp/n']   = 3.5
+    h5['pyroxene/Z06omp/m']   = 0.0
+    h5['pyroxene/Z06omp/p']   = 0.0
+    h5['pyroxene/Z06omp/Q']   = 310 *1e3
+    h5['pyroxene/Z06omp/V']   = 0.0
+    n                = 3.5
+    h5['pyroxene/Z06omp/A']   = (10**-2)*(1e-6)**n
+    h5['pyroxene/Z06omp/rkname'] = 'pyroxene'
+    h5['pyroxene/Z06omp/rkdensity'] = 3300
+
+    h5['pyroxene/O06jad/name'] = 'O06jad'
+    h5['pyroxene/O06jad/ref'] = 'Orzol  2006, wet jadeite'
+    h5['pyroxene/O06jad/n']   = 3.7
+    h5['pyroxene/O06jad/m']   = 0.0
+    h5['pyroxene/O06jad/p']   = 0.0
+    h5['pyroxene/O06jad/Q']   = 326 *1e3
+    h5['pyroxene/O06jad/V']   = 0.0
+    n                = 3.7
+    h5['pyroxene/O06jad/A']   = (10**-3.3)*(1e-6)**n
+    h5['pyroxene/O06jad/rkname'] = 'pyroxene'
+    h5['pyroxene/O06jad/rkdensity'] = 3300

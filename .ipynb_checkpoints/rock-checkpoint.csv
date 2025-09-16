@@ -1,0 +1,56 @@
+﻿name,A,n,d,m,Coh,r,Q,V,ref,rock,rkdensity
+HK03dd,1.10E+05,3.5,0,0,0,0,5.30E+05,1.80E-05,"Hirth and Kohlstedt, 2003, dry olivine, dislocation creep",olivine,3320
+HK03dw,1600,3.5,0,0,0,1.2,5.20E+05,2.20E-05,"Hirth and Kohlstedt, 2003, wet olivine, dislocation creep",olivine,3320
+HK03gd,1.50E+09,1,0,3,0,0,3.75E+05,1.00E-05,"Hirth and Kohlstedt, 2003, dry olivine, diffusion creep",olivine,3320
+HK03gw,2.50E+07,1,0,3,0,1,3.75E+05,2.00E-05,"Hirth and Kohlstedt, 2003, wet olivine, diffusion creep",olivine,3320
+HK03disGBS,6.50E+03,3.5,0,2,0,0,4.00E+05,0.00E+00,"Hirth and Kohlstedt, 2003, dry olivine, dis-GBS",olivine,3320
+HZK11disGBS,6.31E+04,2.9,0,0.7,0,0,4.45E+05,0.00E+00,"Hansen, Zimmerman, and Kohlstedt, 2011, dry olivine, dis-GBS",olivine,3320
+MK00dw,1584.8,3,0,0,0,0.98,4.70E+05,2.00E-05,"Mei and Kohlstedt, 2000, wet olivine, dislocation creep",olivine,3320
+MK00gw,50118.7,1,0,3,0,1,2.95E+05,2.00E-05,"Mei and Kohlstedt, 2000, wet olivine, diffusion creep",olivine,3320
+FJ06,2.00E+10,1.4,0,3,0,0,4.84E+05,0.00E+00,"Faul and Jackson, dry olivine, diffusion creep",olivine,3320
+KJ03d,1.26E+06,3,0,0,0,0,5.10E+06,1.40E-05,"Karato and Jung, dry olivine, dislocation creep",olivine,3320
+KJ03w,794.32823,3,0,1.2,0,1.2,4.70E+05,2.40E-05,"Karato and Jung, wet olivine, dislocation creep",olivine,3320
+Kd,240000,3.5,0,0,0,0,5.40E+05,0.00E+00,"Karato et al., 1986, dry olivine, dislocation creep",olivine,3320
+CM,1000,3,0,0,0,0,5.20E+05,0.00E+00,"Chen and Morgan, 1990",olivine,3320
+Go,70000,3,0,0,0,0,5.20E+05,0.00E+00,Goetze (1978) dislocation,olivine,3320
+GoEXP,5.70E+11,2,0,0,0,0,5.35E+05,0.00E+00,Goetze (1978) exponential,olivine,3320
+HTD01,6.31E-12,4,0,0,0,1,1.35E+05,0.00E+00,"Hirth, Teyssier and Dunlap, 2001, quartzite",quartz,2660
+RB04wd,1.26E-05,3,0,0,0,1,2.42E+05,0.00E+00,"Rutter and Brodie, 2004, wet quartzite, dislocation creep",quartz,2660
+RB04wg,3.98E-01,1,0,2,0,0,2.20E+05,0.00E+00,"Rutter and Brodie, 2004, wet quartzite, diffusion creep",quartz,2660
+PT92,6.50E-08,3.1,0,0,0,0,1.35E+05,0.00E+00,"Paterson and Luan, 1992, quartzite",quartz,2660
+WHOST94DC,9.14E-08,2.4,0,0,0,0,1.01E+05,0.00E+00,"Wang, Hobbs, Ord Shimamoto and Toriumi, 1994, quartzite in dislocation creep",quartz,2660
+GT,1.10E-04,2.8,0,0,0,0,2.23E+05,0.00E+00,"Gleason and Tullis, 1995, quartzite",quartz,2660
+Gm,1.80E-08,2.8,0,0,0,0,1.37E+05,0.00E+00,"Gleason and Tullis, 1995, quartzite with melt",quartz,2660
+Jd,3.85E-06,2.8,0,0,0,0,1.84E+05,0.00E+00,"Jaoul et al., 1984, dry quartzite",quartz,2660
+Jw,9.00E-06,2.8,0,0,0,0,1.63E+05,0.00E+00,"Jaoul et al., 1984, wet quartzite",quartz,2660
+RD06Dd,5.01187E+12,3,0,0,0,0,6.41E+05,0.00E+00,"Rybacki and Dresen 2006, dry An100 in dislocation creep",feldspar,2750
+RD06Wd,1.58489,3,0,0,0,1,3.45E+05,3.80E-05,"Rybacki and Dresen 2006, wet An100 in dislocation creep",feldspar,2750
+RD00Dd,5.01187E+12,3,0,0,0,0,6.48E+05,0.00E+00,"Rybacki and Dresen 2000, An100 in dislocation creep, 0.004wt%H20",feldspar,2750
+RD00Wd,398.1071706,3,0,0,0,0,3.56E+05,0.00E+00,"Rybacki and Dresen 2000, An100 in dislocation creep, 0.07wt%H20",feldspar,2750
+Off01d,2511.886432,3,0,0,0,0,3.32E+05,0.00E+00,"Offerhaus et al. 2001, Ab100 in dislocation creep, 0.2wt%H20",feldspar,2750
+RD06Dg,1.25893E+12,1,0,3,0,0,4.60E+05,2.40E-05,"Rybacki and Dresen 2006, dry An100 in diffusion creep",feldspar,2750
+RD06Wg,0.199526231,1,0,3,0,1,1.59E+05,3.80E-05,"Rybacki and Dresen 2006, wet An100 in diffusion creep",feldspar,2750
+RD00Dg,1.25893E+12,1,0,3,0,0,4.67E+05,0.00E+00,"Rybacki and Dresen 2000, An100 in diffusion creep, 0.004wt%H20",feldspar,2750
+RD00Wg,50.11872336,1,0,3,0,0,1.70E+05,0.00E+00,"Rybacki and Dresen 2000, An100 in diffusion creep, 0.007wt%H20",feldspar,2750
+Off01g,12.58925412,1,0,3,0,0,1.93E+05,0.00E+00,"Offerhaus et al. 2001, Ab100 in diffusion creep, 0.2wt%H20",feldspar,2750
+Ca,0.0612,3.05,0,0,0,0,2.76E+05,0.00E+00,"Caristan, 1982, disbase",diabase,2900
+Cm,3.12E-03,3,0,0,0,0,5.76E+05,0.00E+00,"Caristan, 1982, disbase, mistake",diabase,2900
+ST,100,3.4,0,0,0,0,2.60E+05,0.00E+00,"Shelton and Tullis, 1981, diabase",diabase,2900
+Md,4.2,5.1,0,0,0,0,5.05E+05,0.00E+00,"Mackwell et al., 1995, dry Maryland biabase",diabase,2900
+MN,1900,4.5,0,0,0,0,5.00E+05,0.00E+00,"Mackwell et al., diabase, Ni/NiO buffer",diabase,2900
+MF,4900,4.5,0,0,0,0,5.00E+05,0.00E+00,"Mackwell et al., diabase, Fe/FeObuffer",diabase,2900
+MC,195,4.7,0,0,0,0,4.85E+05,0.00E+00,"Mackwell et al., 1998m dry Columbia diabase",diabase,2900
+MM,7.9,4.7,0,0,0,0,4.85E+05,0.00E+00,"Mackwell et al.,1998, dry Maryland diabase",diabase,2900
+DD05Dd,199526.2315,5.5,0,0,0,0,6.91E+05,0.00E+00,"Dimanov and Dresen 2005, dry diopside, dislocation creep",pyroxene,3300
+DD05Wd,6.309573445,5.5,0,0,0,0,5.34E+05,0.00E+00,"Dimanov and Dresen 2005, wet diopside, dislocation creep",pyroxene,3300
+DD05ddd,1E+14,1,0,3,0,0,5.28E+05,0.00E+00,"Dimanov and Dresen 2005, dry diopside, diffusion creep",pyroxene,3300
+DD05Wdd,125892541.2,1,0,3,0,0,3.37E+05,0.00E+00,"Dimanov and Dresen 2005, wet diopside, diffusion creep",pyroxene,3300
+BW01Dd,19952623150,4.7,0,0,0,0,7.60E+05,0.00E+00,"Bystricky and Mackwell 2001, dry cpx, dislocation creep",pyroxene,3300
+BW01Dg,1.25893E+15,1,0,3,0,0,5.60E+05,0.00E+00,"Bystricky and Mackwell 2001, dry cpx, diffusion creep",pyroxene,3300
+HMMK05Dg,3.16E+23,1,0,3,0,0,7.60E+05,0.00E+00,"Hier-Majumder et al. 2005, dry cpx, diffusion creep",pyroxene,3300
+HMMK05Wg,1258925.412,1,0,3,0,1.4,3.40E+05,1.40E-05,"Hier-Majumder et al. 2005, wet cpx, diffusion creep",pyroxene,3300
+CHK06Wd,5011872.336,2.7,0,0,0,3,6.70E+05,0.00E+00,"Chen et al. 2006, wet cpx, dislocation creep",pyroxene,3300
+Z06omp,0.01,3.5,0,0,0,0,3.10E+05,0.00E+00,"Zhang et al., 2006, dry omphacite",pyroxene,3300
+Mog10doi,2.51E-30,8.1,0,0,0,0,3.91E+05,0.00E+00,"Moghadam et al., 2010,  omphacite (diopside)",pyroxene,3300
+Mog10jad,3162.27766,4.2,0,0,0,0,4.13E+05,0.00E+00,"Moghadam et al., 2010,  omphacite (jadeite)",pyroxene,3300
+O06jad,0.000501187,3.7,0,0,0,0,3.26E+05,0.00E+00,"Orzol 2006, wet jadeite",pyroxene,3300

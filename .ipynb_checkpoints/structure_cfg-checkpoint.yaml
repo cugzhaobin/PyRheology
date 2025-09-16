@@ -1,0 +1,35 @@
+general_dict:
+    planet_number: 3
+    thermal_id: 2
+    surface_temp: 0
+    temp_gradient: 15
+    adiabatic_temp: 1200
+    deform_stype: 3
+    strain_rate: 2e-15
+
+layer1_dict:
+    rock_id: 'quartz'
+    thickness: 10000
+    rheo: 'PT92'
+    duct: [1,-1,2]
+    pore_pressure: 'hydrostatic'
+    piezometer: 0
+    grain_size: 0.001
+
+layer2_dict:
+    rock_id: 'feldspar'
+    thickness: 20000
+    rheo: 'RD00Dd'
+    duct: [2,7,-1,-2,-5]
+    pore_pressure: 'hydrostatic'
+    piezometer: 0
+    grain_size: 0.001
+
+layer3_dict:
+    rock_id: 'olivine'
+    thickness: 40000
+    rheo: 'HK03dd'
+    duct: [1,3,5,-1,-2,-5]
+    pore_pressure: 'hydrostatic'
+    piezometer: 1
+    grain_size: 0.0
