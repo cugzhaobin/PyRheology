@@ -1,6 +1,5 @@
-import numpy as np
 import math
-import matplotlib.pyplot as plt
+import numpy as np
 
 def calc_T(z, Ts, Ti, G, thid):
     DEL = 2*(Ti-Ts)/(G*np.sqrt(np.pi))

@@ -1,4 +1,6 @@
 import numpy as np
+import logging
+
 class flow_law(object):
     '''
     A power law dependence of strain rate on differential stress.
@@ -11,7 +13,7 @@ class flow_law(object):
         '''
         If m is 0, dislocation creep
         If n is 0, diffisioin creep
-            A     = pre-exponential factor, 1/(Pa^(-n)*s)
+            A     = pre-exponential factor, 1/(MPa^(-n)*s)
             n     = stress exponent
             d     = grain size, um = 1e-6 m
             m     = grain size exponent
@@ -42,54 +44,65 @@ class flow_law(object):
         return
 
 
-    def GetEpsilon(self):
+    def get_strain_rate(self):
         '''
+        Compute strain rate ε given stress σ.
         '''
-        epsilon = None
-        if self.sigma != None:
-            print(self.A, self.sigma, self.n)
-            epsilon = self.A * self.sigma**self.n *\
-                      self.d**(-self.m) * self.Coh**self.r *\
-                      np.exp(-(self.Q+self.P*self.V)/(self.R*self.T))
-        return epsilon
+        if self.sigma is None:
+            logging.warning("σ (stress) not set. Cannot compute ε.")
+            return None
 
-    def viscosity(self):
+        strain_rate = (self.A * 
+                       self.d**(-self.m) *
+                       self.Coh**self.r *
+                       self.sigma**self.n *
+                       np.exp(-(self.Q+self.P*self.V)/(self.R*self.T)))
+        return strain_rate
+
+    def get_viscosity(self):
         '''
         Calculate viscosity.
         '''
-        if self.sigma == None and self.epsilon != None:
-            print('1')
-            eta = (np.power(self.epsilon, (1-self.n)/self.n)*
-                   np.exp((self.Q+self.P*self.V)/(self.n*self.R*self.T))/
-                   np.power(self.A*self.d**(-self.m) * self.Coh**self.r, 1/self.n)/2)
-        elif self.sigma != None and self.epsilon == None:
-            print('2')
-            eta = (np.power(self.sigma, (1-self.n))*
-                   np.exp((self.Q+self.P*self.V)/(self.R*self.T))/
-                   (2*self.A)/
-                   self.d**(-self.m)/
-                   self.Coh**self.r)
-
-        return eta
-
-    def GetSigma(self):
-        '''
-        Calculate 
-        '''
-        if self.epsilon != None:
-            sigma = (self.epsilon/
-                       self.A/
-                       np.power(self.d,-self.m)/
-                       np.power(self.Coh, self.r)/
-                       np.exp(-(self.Q+self.P*self.V)/(self.R*self.T)))
-            sigma = np.power(sigma, 1/self.n)
+        if self.d == 0:
+            self.d = 1.0
+        if self.Coh == 0:
+            self.Coh = 1.0
+        print(self.Coh, self.d)
+            
+        # equation (7) of Freed et al. 2012
+        if self.sigma is None and self.epsilon is not None:
+            eta = (self.epsilon ** ((1-self.n)/self.n) *
+                   np.exp((self.Q+self.P*self.V)/(self.n*self.R*self.T)) /
+                   (self.A*self.d**(-self.m) * self.Coh**self.r)**(1/self.n)/2)
+            
+        # equation (6) of Freed et al. 2012
+        elif self.sigma is not None and self.epsilon is None:
+            eta = (np.power(self.sigma, (1-self.n)) *
+                   np.exp((self.Q+self.P*self.V)/(self.R*self.T)) /
+                   (2 * self.A * self.d**(-self.m)* self.Coh**self.r))
         else:
-            sigma = None
+            logging.warning("Need either σ or ε to compute viscosity.")
+            eta = None
+        return eta*1e6
 
+    def get_stress(self):
+        '''
+        Calculate stress σ given strain rate ε.
+        '''
+        if self.epsilon is None:
+            logging.warning("ε (strain rate) not set. Cannot compute σ.")
+            return None
+        
+        sigma = (self.epsilon /
+                 self.A /
+                 self.d**(-self.m) /
+                 self.Coh**self.r /
+                 np.exp(-(self.Q+self.P*self.V)/(self.R*self.T)))
+        sigma = np.power(sigma, 1/self.n)
         return sigma
     
     @staticmethod
-    def plot_T_eta(T, eta):
+    def plot_tempeature_viscosity(T, eta):
         '''
         '''
         import numpy as np
@@ -103,14 +116,28 @@ class flow_law(object):
         plt.show()
         
     @staticmethod
-    def plot_T_stress(T, stress):
+    def plot_depth_viscosity(depth, eta):
         '''
         '''
         import numpy as np
         import matplotlib.pyplot as plt
-        plt.plot(stress, T-273)
+        plt.plot(eta, depth)
+        plt.xlabel('Viscosity (Pas)')
+        plt.ylabel('Depth (km)')
+        ax = plt.gca()
+        ax.invert_yaxis()
+        ax.set_xscale('log')
+        plt.show()
+        
+    @staticmethod
+    def plot_depth_stress(depth, stress):
+        '''
+        '''
+        import numpy as np
+        import matplotlib.pyplot as plt
+        plt.plot(stress, depth)
         plt.xlabel('Stress (MPa)')
-        plt.ylabel('Temperature')
+        plt.ylabel('Depth (km)')
         ax = plt.gca()
         ax.invert_yaxis()
         plt.show()
